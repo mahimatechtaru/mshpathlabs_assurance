@@ -1,0 +1,234 @@
+/* image upload */
+.avatar-upload {
+    position: relative;
+    max-width: 205px;
+    margin: 10px auto;
+}
+.avatar-upload .avatar-edit {
+    position: absolute;
+    right: 12px;
+    z-index: 1;
+    top: 10px;
+}
+.avatar-upload .avatar-edit input {
+    display: none;
+}
+.avatar-upload .avatar-edit input + label {
+    display: inline-block;
+    width: 34px;
+    height: 34px;
+    margin-bottom: 0;
+    border-radius: 100%;
+    background: #FFFFFF;
+    border: 1px solid transparent;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.12);
+    cursor: pointer;
+    font-weight: normal;
+    transition: all 0.2s ease-in-out;
+}
+.avatar-upload .avatar-edit input + label:hover {
+    background: #f1f1f1;
+    border-color: #d6d6d6;
+}
+.avatar-upload .avatar-edit input + label:after {
+    content: "+";
+    color: #757575;
+    position: absolute;
+    top: 3px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    margin: auto;
+    font-size: 21px;
+    font-weight: 900;
+}
+.avatar-upload .avatar-preview {
+    width: 192px;
+    height: 192px;
+    position: relative;
+    border-radius: 100%;
+    border: 6px solid #F8F8F8;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1);
+}
+.avatar-upload .avatar-preview > div {
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.avatar-box .avatar-preview > div{
+    border-radius: 10%;
+    width: 100%;
+}
+.avatar-box .avatar-preview{
+    border-radius: 10%;
+}
+.avatar-box-left{
+    margin: 0px;
+}
+
+.pac-target-input:not(:-webkit-autofill) {
+    animation-name: none;
+}
+.upload-images {
+    position: relative;
+    width: 150px;
+}
+.upload-images img {
+	border-radius: 4px;
+	height: 100px;
+	width: 150px;
+}
+.upload-wrap {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+}
+.upload-wrap .upload-images + .upload-images {
+	margin-left: 20px;
+}
+
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+    color: #495057;
+    background-color: #d4ebffcc;
+    border-color: #1472c4cc #1472c4cc #fff;
+}
+
+.sidebar-img
+{
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    margin-top: 0px !important;
+}
+
+/* subscription */
+
+.pricing-table{
+    display: flex;
+    flex-wrap: wrap;
+    width: min(1600px, 100%);
+    margin: auto;
+  }
+
+  .pricing-card {
+      flex: 1;
+      text-align: center;
+      cursor: pointer;
+      overflow: hidden;
+      color: #2d2d2d;
+      transition: .3s linear;
+      background: aliceblue;
+      border-radius: 28px;
+      height: 100%;
+  }
+
+  .pricing-card-header{
+    background-color: #0fbcf9;
+    display: inline-block;
+    color: #fff;
+    padding: 12px 30px;
+    border-radius: 0 0 20px 20px;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 600;
+    transition: .4s linear;
+  }
+
+  .price{
+    font-size: 30px;
+    color: #0fbcf9;
+    margin: 20px 0;
+    transition: .2s linear;
+  }
+
+  .price sup, .price span{
+    font-size: 22px;
+    font-weight: 700;
+  }
+
+  .pricing-card li{
+    font-size: 16px;
+    padding: 10px 0;
+    text-transform: uppercase;
+  }
+
+  .order-btn{
+    display: inline-block;
+    margin-bottom: 40px;
+    margin-top: 80px;
+    border: 2px solid #0fbcf9;
+    color: #0fbcf9;
+    padding: 18px 40px;
+    border-radius: 8px;
+    text-transform: uppercase;
+    font-weight: 500;
+    transition: .3s linear;
+  }
+
+  .order-btn:hover{
+    background-color: #0fbcf9;
+    color: #fff;
+  }
+
+  @media screen and (max-width:1100px){
+    .pricing-card{
+      flex: 50%;
+    }
+  }
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0;
+}
+
+.custom_error{
+    width: 100%;
+    margin-top: 0.25rem;
+    font-size: 80%;
+    color: #dc3545;
+}
+
+.mapClass{
+    height:400px;
+    border-radius:12px;
+}
+
+.mask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: all .15s ease;
+}
+
+.opacity-7 {
+    opacity: .7 !important;
+}
+.bg-gradient-dark {
+    background: linear-gradient( 87deg, #363636 0, #222b34 100%) !important;
+}
+
+.hide
+{
+    display: none;
+}
+
+.ui-timepicker-container
+{
+    z-index:1111 !important;
+}
+
+.text_transform_none {
+    text-transform: none !important;
+}
+
+.note-editable {
+    text-transform: none !important;
+}
