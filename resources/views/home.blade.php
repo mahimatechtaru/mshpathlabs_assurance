@@ -5,7 +5,7 @@
 @section('content')
     <section class="section">
         @include('layout.breadcrumb',[
-            'title' => __('Dashboard'),
+            'title' => __('Doctor Dashboard'),
         ])
         <div class="section-body">
             <div class="row">

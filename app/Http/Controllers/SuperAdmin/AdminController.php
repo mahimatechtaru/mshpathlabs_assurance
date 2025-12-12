@@ -75,19 +75,16 @@ class AdminController extends Controller
         if (Auth::attempt(['email' => request('email'), 'password' => request('password')])) {
             $user = Auth::user()->load('roles');
             if ($user->hasRole('super admin') && $user->id == 1) {
-                // $data = Setting::find(1);
-                // $api = new LicenseBoxExternalAPI();
-                // $res = $api->verify_license();
-                // if ($res['status'] != true)
-                // {
-                //     $data->license_verify = 0;
-                //     $data->save();
-                // }
-                // else
-                // {
-                //     $data->license_verify = 1;
-                //     $data->save();
-                // }
+                $data = Setting::find(1);
+                $api = new LicenseBoxExternalAPI();
+                $res = $api->verify_license();
+                if ($res['status'] != true) {
+                    $data->license_verify = 0;
+                    $data->save();
+                } else {
+                    $data->license_verify = 1;
+                    $data->save();
+                }
                 return redirect('home');
             } else {
                 if ($user->status == 1) {
