@@ -67,7 +67,7 @@
                             @yield('subscription')
                         @endif
                 @elseif(Gate::check('superadmin_setting'))
-                    @if (App\Models\Setting::find(1)->license_verify == 1)
+                    @if (App\Models\Setting::find(1)->license_verify != 1)
                             @yield('content')
                             @yield('setting')
                     @else
