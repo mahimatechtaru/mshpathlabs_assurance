@@ -11,9 +11,6 @@
 
 [![Laravel CI Status](https://github.com/mahimatechtaru/mshpathlabs_assurance/actions/workflows/laravel.yml/badge.svg)](https://github.com/mahimatechtaru/mshpathlabs_assurance/actions/workflows/laravel.yml)
 
-[![Build Status](https://github.com/mahimatechtaru/mshpathlabs_assurance/actions/workflows/laravel.yml/badge.svg)](https://github.com/mahimatechtaru/mshpathlabs_assurance/actions/workflows/laravel.yml)
-
-
 
 ## About Laravel
 
